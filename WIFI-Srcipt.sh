@@ -22,6 +22,10 @@ ifconfig  up
 echo "Running wifite..."
 wifite
 
+# Disable monitor mode
+echo "Disabling monitor mode..."
+airmon-ng stop [interface_name]
+
 # Script complete
 echo "Script execution complete."
 
